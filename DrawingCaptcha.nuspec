@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>DrawingCaptcha</id>
+    <version>1.0.0</version>
+    <authors>Williams Pesic</authors>
+    <description>Drawing Captcha is an innovative and engaging software designed to verify human users through interactive drawing tasks. 🖌️ Users are prompted to complete specific patterns or color in logos on a grid, ensuring a secure 🔒 and enjoyable 😊 verification process. This unique approach not only enhances security but also promotes brand awareness by incorporating recognizable brand elements into the captchas.</description>
+  </metadata>
+  <files>
+    <file src="FieldTypes\drawingcaptchafield.html" target="content\FieldTypes\drawingcaptchafield.html" />
+    <file src="FieldTypes\FieldType.DrawingCaptchaField.cshtml" target="content\FieldTypes\FieldType.DrawingCaptchaField.cshtml" />
+    <file src="img\drawing-Captcha_small.png" target="content\img\drawing-Captcha_small.png" />
+    <file src="img\icon.png" target="content\img\icon.png" />
+    <file src="img\icon.svg" target="content\img\icon.svg" />
+    <file src="captcha.js" target="content\captcha.js" />
+    <file src="DrawingCaptcha.cs" target="content\DrawingCaptcha.cs" />
+    <file src="FieldComposer.cs" target="content\FieldComposer.cs" />
+    <file src="package.manifest" target="content\package.manifest" />
+  </files>
+</package>
