@@ -2,7 +2,7 @@
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
 		<PackageId>DrawingCaptcha</PackageId>
-		<Version>1.0.13</Version>
+		<Version>1.0.14</Version>
 		<Authors>Williams Pesic</Authors>
 		<Description>Drawing Captcha is an innovative and engaging software designed to verify human users through interactive drawing tasks. 🖌️ Users are prompted to complete specific patterns or color in logos on a grid, ensuring a secure 🔒 and enjoyable 😊 verification process. This unique approach not only enhances security but also promotes brand awareness by incorporating recognizable brand elements into the captchas.</Description>
 		<OutputPath>$(MSBuildProjectDirectory)\nupkg</OutputPath>
