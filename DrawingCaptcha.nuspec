@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
-		<id>DrawingCaptcha</id>
+		<id>WpesicDev.DrawingCaptcha</id>
 		<version>1.0.1</version>
 		<authors>Williams Pesic</authors>
 		<owners>wpesicDev</owners>
@@ -15,15 +15,16 @@
 		<repository type="git" url="https://github.com/Drawing-Captcha/Nuget" />
 	</metadata>
 	<files>
-		<file src="FieldTypes\drawingcaptchafield.html" target="content\FieldTypes\drawingcaptchafield.html" />
-		<file src="FieldTypes\FieldType.DrawingCaptchaField.cshtml" target="content\FieldTypes\FieldType.DrawingCaptchaField.cshtml" />
-		<file src="img\drawing-Captcha_small.png" target="content\img\drawing-Captcha_small.png" />
-		<file src="img\icon.png" target="content\img\icon.png" />
-		<file src="img\icon.svg" target="content\img\icon.svg" />
-		<file src="captcha.js" target="content\captcha.js" />
-		<file src="DrawingCaptcha.cs" target="content\DrawingCaptcha.cs" />
-		<file src="FieldComposer.cs" target="content\FieldComposer.cs" />
-		<file src="package.manifest" target="content\package.manifest" />
-		<file src="README.md" target="content\README.md" />
+		<file src="FieldTypes\drawingcaptchafield.html" target="App_Plugins\FieldTypes\drawingcaptchafield.html" />
+		<file src="FieldTypes\FieldType.DrawingCaptchaField.cshtml" target="App_Plugins\FieldTypes\FieldType.DrawingCaptchaField.cshtml" />
+		<file src="img\drawing-Captcha_small.png" target="App_Plugins\img\drawing-Captcha_small.png" />
+		<file src="img\icon.png" target="App_Plugins\img\icon.png" />
+		<file src="img\icon.svg" target="App_Plugins\img\icon.svg" />
+		<file src="img\drawing-Captcha_small.png" target="App_Plugins\img\drawing-Captcha_small.png" />
+		<file src="captcha.js" target="App_Plugins\captcha.js" />
+		<file src="DrawingCaptcha.cs" target="App_Plugins\DrawingCaptcha.cs" />
+		<file src="FieldComposer.cs" target="App_Plugins\FieldComposer.cs" />
+		<file src="package.manifest" target="App_Plugins\package.manifest" />
+		<file src="README.md" target="App_Plugins\README.md" />
 	</files>
 </package>
