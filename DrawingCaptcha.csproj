@@ -5,7 +5,6 @@
 		<Version>1.0.7</Version>
 		<Authors>Williams Pesic</Authors>
 		<Description>Drawing Captcha is an innovative and engaging software designed to verify human users through interactive drawing tasks. 🖌️ Users are prompted to complete specific patterns or color in logos on a grid, ensuring a secure 🔒 and enjoyable 😊 verification process. This unique approach not only enhances security but also promotes brand awareness by incorporating recognizable brand elements into the captchas.</Description>
-		<OutputPath>$(MSBuildProjectDirectory)\nupkg</OutputPath>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageProjectUrl>https://github.com/Drawing-Captcha/Nuget</PackageProjectUrl>
 		<PackageIconUrl>https://docs.drawing-captcha.com/favicon.ico</PackageIconUrl>
@@ -15,7 +14,7 @@
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/Drawing-Captcha/Nuget</RepositoryUrl>
 	</PropertyGroup>
-
+	<Import Project="DrawingCaptcha.targets" />
 	<ItemGroup>
 		<PackageReference Include="Umbraco.Cms.Core" Version="13.5.2" />
 		<PackageReference Include="Umbraco.Cms.Infrastructure" Version="13.5.2" />
@@ -35,6 +34,4 @@
 		<None Include="README.md" Pack="true" PackagePath="App_Plugins\README.md" CopyToOutputDirectory="PreserveNewest" />
 	</ItemGroup>
 
-	<!-- Import der MSBuild-Datei -->
-	<Import Project="DrawingCaptcha.targets" />
 </Project>
