@@ -19,6 +19,6 @@
   </ItemGroup>
 
   <Target Name="PackNuGet" AfterTargets="Build">
-    <Exec Command="nuget pack $(NuspecFile) -OutputDirectory $(OutputPath)" />
+    <Exec Command="dotnet pack $(NuspecFile) -OutputDirectory $(OutputPath)" />
   </Target>
 </Project>
