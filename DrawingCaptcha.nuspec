@@ -20,7 +20,6 @@
 		<file src="img\drawing-Captcha_small.png" target="App_Plugins\img\drawing-Captcha_small.png" />
 		<file src="img\icon.png" target="App_Plugins\img\icon.png" />
 		<file src="img\icon.svg" target="App_Plugins\img\icon.svg" />
-		<file src="img\drawing-Captcha_small.png" target="App_Plugins\img\drawing-Captcha_small.png" />
 		<file src="captcha.js" target="App_Plugins\captcha.js" />
 		<file src="DrawingCaptcha.cs" target="App_Plugins\DrawingCaptcha.cs" />
 		<file src="FieldComposer.cs" target="App_Plugins\FieldComposer.cs" />
