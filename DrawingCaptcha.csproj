@@ -1,8 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-  	<ImplicitUsings>enable</ImplicitUsings>
-  	<Nullable>enable</Nullable>
     <PackageId>DrawingCaptcha</PackageId>
     <Version>1.0.5</Version>
     <Authors>Williams Pesic</Authors>
@@ -19,14 +17,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-  	<PackageReference Include="Microsoft.ICU.ICU4C.Runtime" Version="72.1.0.3" />
   	<PackageReference Include="Umbraco.Cms.Core" Version="13.5.2" />
   	<PackageReference Include="Umbraco.Cms.Infrastructure" Version="13.5.2" />
   	<PackageReference Include="Umbraco.Cms.Web.Common" Version="13.5.2" />
   	<PackageReference Include="Umbraco.Forms" Version="13.2.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
     <PackageReference Include="Umbraco.Cms" Version="13.5.2" />
     <None Include="FieldTypes\drawingcaptchafield.html" Pack="true" PackagePath="App_Plugins\FieldTypes\drawingcaptchafield.html" CopyToOutputDirectory="PreserveNewest" />
     <None Include="FieldTypes\FieldType.DrawingCaptchaField.cshtml" Pack="true" PackagePath="App_Plugins\FieldTypes\FieldType.DrawingCaptchaField.cshtml" CopyToOutputDirectory="PreserveNewest" />
