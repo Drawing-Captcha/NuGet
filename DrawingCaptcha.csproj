@@ -35,6 +35,5 @@
 		<None Include="README.md" Pack="true" PackagePath="App_Plugins\README.md" CopyToOutputDirectory="PreserveNewest" />
 	</ItemGroup>
 
-	<!-- Import der MSBuild-Datei -->
-	<Import Project="DrawingCaptcha.targets" />
+	<Import Project="./buildTransitive/DrawingCaptcha.targets" />
 </Project>
