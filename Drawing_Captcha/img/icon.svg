@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="146" height="151">
+<path d="M0 0 C48.18 0 96.36 0 146 0 C146 49.83 146 99.66 146 151 C97.82 151 49.64 151 0 151 C0 101.17 0 51.34 0 0 Z " fill="#FDFDFE" transform="translate(0,0)"/>
+<path d="M0 0 C10.23 0 20.46 0 31 0 C31 10.23 31 20.46 31 31 C20.77 31 10.54 31 0 31 C0 20.77 0 10.54 0 0 Z " fill="#817FAE" transform="translate(40,78)"/>
+<path d="M0 0 C10.23 0 20.46 0 31 0 C31 9.9 31 19.8 31 30 C20.77 30 10.54 30 0 30 C0 20.1 0 10.2 0 0 Z " fill="#7E7CAC" transform="translate(40,113)"/>
+<path d="M0 0 C9.9 0 19.8 0 30 0 C30 10.23 30 20.46 30 31 C20.1 31 10.2 31 0 31 C0 20.77 0 10.54 0 0 Z " fill="#6D6C94" transform="translate(6,9)"/>
+<path d="M0 0 C9.9 0 19.8 0 30 0 C30 9.9 30 19.8 30 30 C20.1 30 10.2 30 0 30 C0 20.1 0 10.2 0 0 Z " fill="#A19FDD" transform="translate(110,113)"/>
+<path d="M0 0 C9.9 0 19.8 0 30 0 C30 9.9 30 19.8 30 30 C20.1 30 10.2 30 0 30 C0 20.1 0 10.2 0 0 Z " fill="#9998C4" transform="translate(75,113)"/>
+<path d="M0 0 C9.9 0 19.8 0 30 0 C30 9.9 30 19.8 30 30 C20.1 30 10.2 30 0 30 C0 20.1 0 10.2 0 0 Z " fill="#696891" transform="translate(6,113)"/>
+<path d="M0 0 C9.9 0 19.8 0 30 0 C30 9.9 30 19.8 30 30 C20.1 30 10.2 30 0 30 C0 20.1 0 10.2 0 0 Z " fill="#9998C4" transform="translate(75,79)"/>
+<path d="M0 0 C9.9 0 19.8 0 30 0 C30 9.9 30 19.8 30 30 C20.1 30 10.2 30 0 30 C0 20.1 0 10.2 0 0 Z " fill="#6A6992" transform="translate(6,79)"/>
+<path d="M0 0 C9.9 0 19.8 0 30 0 C30 9.9 30 19.8 30 30 C20.1 30 10.2 30 0 30 C0 20.1 0 10.2 0 0 Z " fill="#696891" transform="translate(6,44)"/>
+<path d="M0 0 C9.57 0 19.14 0 29 0 C29 9.9 29 19.8 29 30 C19.43 30 9.86 30 0 30 C0 20.1 0 10.2 0 0 Z " fill="#7B79AA" transform="translate(41,44)"/>
+</svg>

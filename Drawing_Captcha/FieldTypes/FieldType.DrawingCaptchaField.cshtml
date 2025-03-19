@@ -1,0 +1,25 @@
+@using Microsoft.Extensions.Configuration
+@model Umbraco.Forms.Web.Models.FieldViewModel
+@inject IConfiguration Configuration
+
+@{
+    var APIKey = Configuration.GetValue<string>("Umbraco:Forms:FieldTypes:DrawingCaptcha:APIKey");
+    var Server = Configuration.GetValue<string>("Umbraco:Forms:FieldTypes:DrawingCaptcha:Server");
+}
+<script>
+
+        @if (!string.IsNullOrEmpty(APIKey))
+        {
+            <text>var CaptchaHiddenAPIKey = "@APIKey";</text>
+        }
+        @if (!string.IsNullOrEmpty(APIKey))
+        {
+        <text>var CaptchaServerWithPort = "@Server";</text>
+        }
+        let currentElement = document.currentScript.closest('form');
+        if (currentElement) {
+            currentElement.setAttribute('drawing-captcha', '');
+        } else {
+            console.error('No form element found.');
+        }
+</script>
