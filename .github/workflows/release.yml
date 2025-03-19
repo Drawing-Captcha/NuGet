@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -12,18 +13,16 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Install Mono
-      run: |
-        sudo apt update
-        sudo apt install -y mono-complete
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.0'
 
-    - name: Setup NuGet CLI
-      run: |
-        curl -sSL https://dist.nuget.org/win-x86-commandline/latest/nuget.exe -o nuget.exe
-        chmod +x ./nuget.exe
+    - name: Restore NuGet Packages
+      run: dotnet restore
 
-    - name: Pack nugets
-      run: mono nuget.exe pack DrawingCaptcha.nuspec
+    - name: Pack NuGet Package
+      run: dotnet pack -c Release --output ./nupkg
 
     - name: Push to NuGet
-      run: mono nuget.exe push "*.nupkg" -ApiKey ${{secrets.nuget_api_key}} -Source https://api.nuget.org/v3/index.json
+      run: dotnet nuget push ./nupkg/*.nupkg --api-key ${{ secrets.nuget_api_key }} --source https://api.nuget.org/v3/index.json
