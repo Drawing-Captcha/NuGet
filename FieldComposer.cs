@@ -2,7 +2,7 @@
 using Umbraco.Cms.Core.DependencyInjection;
 using Umbraco.Forms.Core.Providers;
 
-namespace Dit.Umb.Delica.Web.App_Plugins.DrawingCaptcha
+namespace DrawingCaptcha
 {
         public class FieldComposer : IComposer
         {

@@ -7,7 +7,7 @@ using Umbraco.Forms.Core.Models;
 using Umbraco.Forms.Core.Services;
 
 
-namespace Dit.Umb.Delica.Web.App_Plugins.DrawingCaptcha
+namespace DrawingCaptcha
 {
     public class DrawingCaptchaField : Umbraco.Forms.Core.FieldType
     {

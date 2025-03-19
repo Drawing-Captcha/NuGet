@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<DrawingCaptchaContentFilesPath>$(MSBuildThisFileDirectory)..\content\App_Plugins\Drawing_Captcha\**\*.*</DrawingCaptchaContentFilesPath>
+	</PropertyGroup>
+
+	<Target Name="CopyDrawingCaptchaPackageAssets" BeforeTargets="Build">
+		<ItemGroup>
+			<DrawingCaptchaContentFiles Include="$(DrawingCaptchaContentFilesPath)"/>
+		</ItemGroup>
+		<Message Text="Copying DrawingCaptcha files: $(DrawingCaptchaContentFilesPath) - #@(DrawingCaptchaContentFiles-&gt;Count()) files" Importance="high"/>
+		<Copy SourceFiles="@(DrawingCaptchaContentFiles)" DestinationFiles="@(DrawingCaptchaContentFiles-&gt;'$(MSBuildProjectDirectory)\App_Plugins\Drawing_Captcha\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true"/>
+
+	</Target>
+
+	<Target Name="ClearDrawingCaptchaPackageAssets" BeforeTargets="Clean">
+		<ItemGroup>
+			<DrawingCaptchaContentFilesDir Include="$(MSBuildProjectDirectory)\App_Plugins\Drawing_Captcha\"/>
+		</ItemGroup>
+		<Message Text="Clear old DrawingCaptcha files" Importance="high"/>
+		<RemoveDir Directories="@(DrawingCaptchaContentFilesDir)"/>
+	</Target>
+
+</Project>
