@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
-		<id>WpesicDev.DrawingCaptcha</id>
+		<id>DrawingCaptcha</id>
 		<version>1.0.2</version>
 		<authors>Williams Pesic</authors>
 		<owners>wpesicDev</owners>
