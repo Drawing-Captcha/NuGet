@@ -2,7 +2,7 @@
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
 		<PackageId>DrawingCaptcha</PackageId>
-		<Version>1.0.6</Version>
+		<Version>1.0.12</Version>
 		<Authors>Williams Pesic</Authors>
 		<Description>Drawing Captcha is an innovative and engaging software designed to verify human users through interactive drawing tasks. 🖌️ Users are prompted to complete specific patterns or color in logos on a grid, ensuring a secure 🔒 and enjoyable 😊 verification process. This unique approach not only enhances security but also promotes brand awareness by incorporating recognizable brand elements into the captchas.</Description>
 		<OutputPath>$(MSBuildProjectDirectory)\nupkg</OutputPath>
@@ -15,7 +15,6 @@
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/Drawing-Captcha/Nuget</RepositoryUrl>
 	</PropertyGroup>
-
 	<ItemGroup>
 		<PackageReference Include="Umbraco.Cms.Core" Version="13.5.2" />
 		<PackageReference Include="Umbraco.Cms.Infrastructure" Version="13.5.2" />
@@ -23,18 +22,15 @@
 		<PackageReference Include="Umbraco.Forms" Version="13.2.1" />
 		<PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
 		<PackageReference Include="Umbraco.Cms" Version="13.5.2" />
-		<None Include="App_Plugins\Drawing_Captcha\captcha.js" />
-		<None Include="App_Plugins\Drawing_Captcha\FieldTypes\drawingcaptchafield.html" />
-		<None Include="App_Plugins\Drawing_Captcha\FieldTypes\FieldType.DrawingCaptchaField.cshtml" />
-		<None Include="App_Plugins\Drawing_Captcha\img\drawing-Captcha_small.png" />
-		<None Include="App_Plugins\Drawing_Captcha\img\icon.png" />
-		<None Include="App_Plugins\Drawing_Captcha\img\icon.svg" />
-		<None Include="App_Plugins\Drawing_Captcha\package.manifest" />
-		<None Include="DrawingCaptcha.cs" Pack="true" PackagePath="App_Plugins\DrawingCaptcha.cs" CopyToOutputDirectory="PreserveNewest" />
-		<None Include="FieldComposer.cs" Pack="true" PackagePath="App_Plugins\FieldComposer.cs" CopyToOutputDirectory="PreserveNewest" />
-		<None Include="README.md" Pack="true" PackagePath="App_Plugins\README.md" CopyToOutputDirectory="PreserveNewest" />
+		<None Include="Drawing_Captcha\captcha.js" Pack="true" PackagePath="Drawing_Captcha\captcha.js" />
+		<None Include="Drawing_Captcha\FieldTypes\drawingcaptchafield.html" Pack="true" PackagePath="Drawing_Captcha\FieldTypes\drawingcaptchafield.html" />
+		<None Include="Drawing_Captcha\FieldTypes\FieldType.DrawingCaptchaField.cshtml" Pack="true" PackagePath="Drawing_Captcha\FieldTypes\FieldType.DrawingCaptchaField.cshtml" />
+		<None Include="Drawing_Captcha\img\drawing-Captcha_small.png" Pack="true" PackagePath="Drawing_Captcha\img\drawing-Captcha_small.png" />
+		<None Include="Drawing_Captcha\img\icon.png" Pack="true" PackagePath="Drawing_Captcha\img\icon.png" />
+		<None Include="Drawing_Captcha\img\icon.svg" Pack="true" PackagePath="Drawing_Captcha\img\icon.svg" />
+		<None Include="Drawing_Captcha\package.manifest" Pack="true" PackagePath="Drawing_Captcha\package.manifest" />
+		<None Include="Drawing_Captcha\DrawingCaptcha.cs" Pack="true" PackagePath="Drawing_Captcha\DrawingCaptcha.cs" />
+		<None Include="Drawing_Captcha\FieldComposer.cs" Pack="true" PackagePath="Drawing_Captcha\FieldComposer.cs" />
 	</ItemGroup>
-
-	<!-- Import der MSBuild-Datei -->
 	<Import Project="DrawingCaptcha.targets" />
 </Project>
