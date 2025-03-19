@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputPath>$(MSBuildProjectDirectory)\</OutputPath>
+    <NuspecFile>DrawingCaptcha.nuspec</NuspecFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="FieldTypes\drawingcaptchafield.html" Pack="true" PackagePath="App_Plugins\FieldTypes\drawingcaptchafield.html" />
+    <None Include="FieldTypes\FieldType.DrawingCaptchaField.cshtml" Pack="true" PackagePath="App_Plugins\FieldTypes\FieldType.DrawingCaptchaField.cshtml" />
+    <None Include="img\drawing-Captcha_small.png" Pack="true" PackagePath="App_Plugins\img\drawing-Captcha_small.png" />
+    <None Include="img\icon.png" Pack="true" PackagePath="App_Plugins\img\icon.png" />
+    <None Include="img\icon.svg" Pack="true" PackagePath="App_Plugins\img\icon.svg" />
+    <None Include="captcha.js" Pack="true" PackagePath="App_Plugins\captcha.js" />
+    <None Include="DrawingCaptcha.cs" Pack="true" PackagePath="App_Plugins\DrawingCaptcha.cs" />
+    <None Include="FieldComposer.cs" Pack="true" PackagePath="App_Plugins\FieldComposer.cs" />
+    <None Include="package.manifest" Pack="true" PackagePath="App_Plugins\package.manifest" />
+    <None Include="README.md" Pack="true" PackagePath="App_Plugins\README.md" />
+  </ItemGroup>
+
+  <Target Name="PackNuGet" AfterTargets="Build">
+    <Exec Command="nuget pack $(NuspecFile) -OutputDirectory $(OutputPath)" />
+  </Target>
+</Project>
