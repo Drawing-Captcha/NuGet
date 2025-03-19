@@ -1,9 +1,8 @@
 <?xml version="1.0"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
-		<DrawingCaptchaContentFilesPath>$(MSBuildThisFileDirectory)..\content\App_Plugins\Drawing_Captcha\**\*.*</DrawingCaptchaContentFilesPath>
+	  <DrawingCaptchaContentFilesPath>$(MSBuildThisFileDirectory)..\App_Plugins\Drawing_Captcha\**\*.*</DrawingCaptchaContentFilesPath>
 	</PropertyGroup>
-
 	<Target Name="CopyDrawingCaptchaPackageAssets" BeforeTargets="Build">
 		<ItemGroup>
 			<DrawingCaptchaContentFiles Include="$(DrawingCaptchaContentFilesPath)"/>
