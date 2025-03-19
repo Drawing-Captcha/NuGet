@@ -19,6 +19,10 @@
   <ItemGroup>
     <PackageReference Include="UmbracoCms" Version="8.18.15" />
     <PackageReference Include="UmbracoCms.Core" Version="8.18.15" />
+    <PackageReference Include="UmbracoCms.Web" Version="8.18.15" />
+    <PackageReference Include="Umbraco.Forms" Version="8.18.15" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="6.0.0" />
     <None Include="FieldTypes\drawingcaptchafield.html" Pack="true" PackagePath="App_Plugins\FieldTypes\drawingcaptchafield.html" CopyToOutputDirectory="PreserveNewest" />
     <None Include="FieldTypes\FieldType.DrawingCaptchaField.cshtml" Pack="true" PackagePath="App_Plugins\FieldTypes\FieldType.DrawingCaptchaField.cshtml" CopyToOutputDirectory="PreserveNewest" />
     <None Include="img\drawing-Captcha_small.png" Pack="true" PackagePath="App_Plugins\img\drawing-Captcha_small.png" CopyToOutputDirectory="PreserveNewest" />
