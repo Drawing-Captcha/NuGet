@@ -23,7 +23,7 @@
   	<PackageReference Include="Umbraco.Cms.Web.Common" Version="13.5.2" />
   	<PackageReference Include="Umbraco.Forms" Version="13.2.1" />
     <PackageReference Include="Umbraco.Cms" Version="13.5.2" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.3" />
     <None Include="FieldTypes\drawingcaptchafield.html" Pack="true" PackagePath="App_Plugins\FieldTypes\drawingcaptchafield.html" CopyToOutputDirectory="PreserveNewest" />
     <None Include="FieldTypes\FieldType.DrawingCaptchaField.cshtml" Pack="true" PackagePath="App_Plugins\FieldTypes\FieldType.DrawingCaptchaField.cshtml" CopyToOutputDirectory="PreserveNewest" />
     <None Include="img\drawing-Captcha_small.png" Pack="true" PackagePath="App_Plugins\img\drawing-Captcha_small.png" CopyToOutputDirectory="PreserveNewest" />
