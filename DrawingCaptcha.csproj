@@ -23,16 +23,15 @@
 		<PackageReference Include="Umbraco.Forms" Version="13.2.1" />
 		<PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
 		<PackageReference Include="Umbraco.Cms" Version="13.5.2" />
-		<None Include="App_Plugins\Drawing_Captcha\captcha.js" />
-		<None Include="App_Plugins\Drawing_Captcha\FieldTypes\drawingcaptchafield.html" />
-		<None Include="App_Plugins\Drawing_Captcha\FieldTypes\FieldType.DrawingCaptchaField.cshtml" />
-		<None Include="App_Plugins\Drawing_Captcha\img\drawing-Captcha_small.png" />
-		<None Include="App_Plugins\Drawing_Captcha\img\icon.png" />
-		<None Include="App_Plugins\Drawing_Captcha\img\icon.svg" />
-		<None Include="App_Plugins\Drawing_Captcha\package.manifest" />
-		<None Include="DrawingCaptcha.cs" Pack="true" PackagePath="App_Plugins\DrawingCaptcha.cs" CopyToOutputDirectory="PreserveNewest" />
-		<None Include="FieldComposer.cs" Pack="true" PackagePath="App_Plugins\FieldComposer.cs" CopyToOutputDirectory="PreserveNewest" />
-		<None Include="README.md" Pack="true" PackagePath="App_Plugins\README.md" CopyToOutputDirectory="PreserveNewest" />
+		<None Include="Drawing_Captcha\captcha.js" Pack="true" PackagePath="Drawing_Captcha\captcha.js" />
+		<None Include="Drawing_Captcha\FieldTypes\drawingcaptchafield.html" Pack="true" PackagePath="Drawing_Captcha\FieldTypes\drawingcaptchafield.html" />
+		<None Include="Drawing_Captcha\FieldTypes\FieldType.DrawingCaptchaField.cshtml" Pack="true" PackagePath="Drawing_Captcha\FieldTypes\FieldType.DrawingCaptchaField.cshtml" />
+		<None Include="Drawing_Captcha\img\drawing-Captcha_small.png" Pack="true" PackagePath="Drawing_Captcha\img\drawing-Captcha_small.png" />
+		<None Include="Drawing_Captcha\img\icon.png" Pack="true" PackagePath="Drawing_Captcha\img\icon.png" />
+		<None Include="Drawing_Captcha\img\icon.svg" Pack="true" PackagePath="Drawing_Captcha\img\icon.svg" />
+		<None Include="Drawing_Captcha\package.manifest" Pack="true" PackagePath="Drawing_Captcha\package.manifest" />
+		<None Include="Drawing_Captcha\DrawingCaptcha.cs" Pack="true" PackagePath="Drawing_Captcha\DrawingCaptcha.cs" />
+		<None Include="Drawing_Captcha\FieldComposer.cs" Pack="true" PackagePath="Drawing_Captcha\FieldComposer.cs" />
 	</ItemGroup>
 
 	<Import Project="./buildTransitive/DrawingCaptcha.targets" />
