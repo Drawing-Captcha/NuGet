@@ -2,6 +2,7 @@
   <PropertyGroup>
     <OutputPath>$(MSBuildProjectDirectory)\</OutputPath>
     <NuspecFile>DrawingCaptcha.nuspec</NuspecFile>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
