@@ -13,13 +13,13 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Setup .NET SDK
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: '8.0' 
+    - name: Setup NuGet CLI
+      run: |
+        curl -sSL https://dist.nuget.org/win-x86-commandline/latest/nuget.exe -o nuget.exe
+        chmod +x ./nuget.exe
 
     - name: Pack nugets
-      run: dotnet pack DrawingCaptcha.nuspec --output .
+      run: mono nuget.exe pack DrawingCaptcha.nuspec
 
     - name: Push to NuGet
-      run: dotnet nuget push "*.nupkg" --api-key ${{secrets.nuget_api_key}} --source https://api.nuget.org/v3/index.json
+      run: mono nuget.exe push "*.nupkg" -ApiKey ${{secrets.nuget_api_key}} -Source https://api.nuget.org/v3/index.json
