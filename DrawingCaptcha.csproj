@@ -17,10 +17,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="UmbracoCms" Version="13.5.2" />
-    <PackageReference Include="UmbracoCms.Core" Version="13.5.2" />
-    <PackageReference Include="UmbracoCms.Web.Common" Version="13.5.2" />
-    <PackageReference Include="Umbraco.Forms" Version="13.5.1" />
+  	<PackageReference Include="Microsoft.ICU.ICU4C.Runtime" Version="72.1.0.3" />
+  	<PackageReference Include="Umbraco.Cms.Core" Version="13.5.2" />
+  	<PackageReference Include="Umbraco.Cms.Infrastructure" Version="13.5.2" />
+  	<PackageReference Include="Umbraco.Cms.Web.Common" Version="13.5.2" />
+  	<PackageReference Include="Umbraco.Forms" Version="13.2.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
     <None Include="FieldTypes\drawingcaptchafield.html" Pack="true" PackagePath="App_Plugins\FieldTypes\drawingcaptchafield.html" CopyToOutputDirectory="PreserveNewest" />
     <None Include="FieldTypes\FieldType.DrawingCaptchaField.cshtml" Pack="true" PackagePath="App_Plugins\FieldTypes\FieldType.DrawingCaptchaField.cshtml" CopyToOutputDirectory="PreserveNewest" />
