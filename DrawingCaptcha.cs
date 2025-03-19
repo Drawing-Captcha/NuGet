@@ -11,8 +11,6 @@ namespace Dit.Umb.Delica.Web.App_Plugins.DrawingCaptcha
 {
     public class DrawingCaptchaField : Umbraco.Forms.Core.FieldType
     {
-        private readonly IConfiguration _configuration;
-
         public DrawingCaptchaField()
         {
             Id = new Guid("45beb78b-ca70-4d0c-bad2-231bf087c6fc");
