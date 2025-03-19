@@ -1,24 +1,31 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <OutputPath>$(MSBuildProjectDirectory)\</OutputPath>
-    <NuspecFile>DrawingCaptcha.nuspec</NuspecFile>
     <TargetFramework>net6.0</TargetFramework>
+    <PackageId>DrawingCaptcha</PackageId>
+    <Version>1.0.5</Version>
+    <Authors>Williams Pesic</Authors>
+    <Description>Drawing Captcha is an innovative and engaging software designed to verify human users through interactive drawing tasks. 🖌️ Users are prompted to complete specific patterns or color in logos on a grid, ensuring a secure 🔒 and enjoyable 😊 verification process. This unique approach not only enhances security but also promotes brand awareness by incorporating recognizable brand elements into the captchas.</Description>
+    <OutputPath>$(MSBuildProjectDirectory)\nupkg</OutputPath>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Drawing-Captcha/Nuget</PackageProjectUrl>
+    <PackageIconUrl>https://docs.drawing-captcha.com/favicon.ico</PackageIconUrl>
+    <RequireLicenseAcceptance>false</RequireLicenseAcceptance>
+    <ReleaseNotes>Initial release of DrawingCaptcha.</ReleaseNotes>
+    <Tags>captcha security drawing self-hosted brand-awareness</Tags>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/Drawing-Captcha/Nuget</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="FieldTypes\drawingcaptchafield.html" Pack="true" PackagePath="App_Plugins\FieldTypes\drawingcaptchafield.html" />
-    <None Include="FieldTypes\FieldType.DrawingCaptchaField.cshtml" Pack="true" PackagePath="App_Plugins\FieldTypes\FieldType.DrawingCaptchaField.cshtml" />
-    <None Include="img\drawing-Captcha_small.png" Pack="true" PackagePath="App_Plugins\img\drawing-Captcha_small.png" />
-    <None Include="img\icon.png" Pack="true" PackagePath="App_Plugins\img\icon.png" />
-    <None Include="img\icon.svg" Pack="true" PackagePath="App_Plugins\img\icon.svg" />
-    <None Include="captcha.js" Pack="true" PackagePath="App_Plugins\captcha.js" />
-    <None Include="DrawingCaptcha.cs" Pack="true" PackagePath="App_Plugins\DrawingCaptcha.cs" />
-    <None Include="FieldComposer.cs" Pack="true" PackagePath="App_Plugins\FieldComposer.cs" />
-    <None Include="package.manifest" Pack="true" PackagePath="App_Plugins\package.manifest" />
-    <None Include="README.md" Pack="true" PackagePath="App_Plugins\README.md" />
+    <None Include="FieldTypes\drawingcaptchafield.html" Pack="true" PackagePath="App_Plugins\FieldTypes\drawingcaptchafield.html" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="FieldTypes\FieldType.DrawingCaptchaField.cshtml" Pack="true" PackagePath="App_Plugins\FieldTypes\FieldType.DrawingCaptchaField.cshtml" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="img\drawing-Captcha_small.png" Pack="true" PackagePath="App_Plugins\img\drawing-Captcha_small.png" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="img\icon.png" Pack="true" PackagePath="App_Plugins\img\icon.png" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="img\icon.svg" Pack="true" PackagePath="App_Plugins\img\icon.svg" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="captcha.js" Pack="true" PackagePath="App_Plugins\captcha.js" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="DrawingCaptcha.cs" Pack="true" PackagePath="App_Plugins\DrawingCaptcha.cs" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="FieldComposer.cs" Pack="true" PackagePath="App_Plugins\FieldComposer.cs" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="package.manifest" Pack="true" PackagePath="App_Plugins\package.manifest" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="README.md" Pack="true" PackagePath="App_Plugins\README.md" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
-
-  <Target Name="PackNuGet" AfterTargets="Build">
-    <Exec Command="dotnet pack $(NuspecFile) -OutputDirectory $(OutputPath)" />
-  </Target>
 </Project>
