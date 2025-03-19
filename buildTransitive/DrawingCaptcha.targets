@@ -12,12 +12,11 @@
 		<Copy SourceFiles="@(DrawingCaptchaContentFiles)" DestinationFiles="@(DrawingCaptchaContentFiles-&gt;'$(MSBuildProjectDirectory)\App_Plugins\Drawing_Captcha\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true"/>
 	</Target>
 
-	<Target Name="ClearDrawingCaptchaPackageAssets" BeforeTargets="Clean">
-		<ItemGroup>
-			<DrawingCaptchaContentFilesDir Include="$(MSBuildProjectDirectory)\App_Plugins\Drawing_Captcha\"/>
-		</ItemGroup>
-		<Message Text="Clear old DrawingCaptcha files" Importance="high"/>
-		<RemoveDir Directories="@(DrawingCaptchaContentFilesDir)"/>
-	</Target>
-
+  <Target Name="ClearDrawingCaptchaPackageAssets" BeforeTargets="Clean">
+    <ItemGroup>
+      <DrawingCaptchaContentFilesDir Include="$(DrawingCaptchaDestinationPath)"/>
+    </ItemGroup>
+    <Message Text="Clear old DrawingCaptcha files" Importance="high"/>
+    <RemoveDir Directories="@(DrawingCaptchaContentFilesDir)"/>
+  </Target>
 </Project>
