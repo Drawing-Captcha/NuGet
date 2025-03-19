@@ -2,7 +2,7 @@
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
 		<PackageId>DrawingCaptcha</PackageId>
-		<Version>1.0.12</Version>
+		<Version>1.0.13</Version>
 		<Authors>Williams Pesic</Authors>
 		<Description>Drawing Captcha is an innovative and engaging software designed to verify human users through interactive drawing tasks. 🖌️ Users are prompted to complete specific patterns or color in logos on a grid, ensuring a secure 🔒 and enjoyable 😊 verification process. This unique approach not only enhances security but also promotes brand awareness by incorporating recognizable brand elements into the captchas.</Description>
 		<OutputPath>$(MSBuildProjectDirectory)\nupkg</OutputPath>
@@ -32,6 +32,7 @@
 		<None Include="Drawing_Captcha\package.manifest" Pack="true" PackagePath="Drawing_Captcha\package.manifest" />
 		<None Include="Drawing_Captcha\DrawingCaptcha.cs" Pack="true" PackagePath="Drawing_Captcha\DrawingCaptcha.cs" />
 		<None Include="Drawing_Captcha\FieldComposer.cs" Pack="true" PackagePath="Drawing_Captcha\FieldComposer.cs" />
+		<None Include="buildTransitive\DrawingCaptcha.targets" Pack="true" PackagePath="buildTransitive\DrawingCaptcha.targets" />
 	</ItemGroup>
 
 	<Import Project="./buildTransitive/DrawingCaptcha.targets" />
