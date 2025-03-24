@@ -14,7 +14,7 @@
 
   <Target Name="ClearDrawingCaptchaPackageAssets" BeforeTargets="Clean">
     <ItemGroup>
-      <DrawingCaptchaContentFilesDir Include="$(DrawingCaptchaDestinationPath)"/>
+      <DrawingCaptchaContentFilesDir Include="$(MSBuildProjectDirectory)\App_Plugins\Drawing_Captcha\"/>
     </ItemGroup>
     <Message Text="Clear old DrawingCaptcha files" Importance="high"/>
     <RemoveDir Directories="@(DrawingCaptchaContentFilesDir)"/>
