@@ -4,15 +4,12 @@
   "version": "1.0.0",
   "allowPackageTelemetry": true,
   "javascript": [
-    "/App_Plugins/DrawingCaptcha/captcha.js"
+    "~/App_Plugins/Drawing_Captcha/captcha.js"
   ],
   "fieldTypes": [
     {
       "name": "DrawingCaptchaField",
-      "view": "~/App_Plugins/DrawingCaptcha/FieldTypes/drawingcaptchafield.html"
+      "view": "~/App_Plugins/Drawing_Captcha/FieldTypes/drawingcaptchafield.html"
     }
-  ],
-  "css": [
-    "~/App_Plugins/DrawingCaptcha/styles.css"
   ]
 }
