@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Http;
@@ -20,7 +20,7 @@ namespace DrawingCaptcha
             DataType = FieldDataType.Bit;
             SortOrder = 10;
             SupportsPreValues = false;
-            FieldTypeViewName = "~/App_Plugins/DrawingCaptcha/FieldTypes/FieldType.DrawingCaptchaField.cshtml";
+            FieldTypeViewName = "~/App_Plugins/Drawing_Captcha/FieldTypes/FieldType.DrawingCaptchaField.cshtml";
             HideLabel = true;
         }
 
