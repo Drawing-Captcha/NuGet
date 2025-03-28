@@ -1,0 +1,37 @@
+{
+    "$schema": "https://marketplace.umbraco.com/umbraco-marketplace-schema.json",
+    "AddOnPackagesRequiredForUmbracoCloud": ["Umbraco.Forms"],
+    "AlternateCategory": "Editor Tools",
+    "AuthorDetails": {
+      "Name": "Williams Pesic (wpesicDev)",
+      "Description": "Williams Pesic is a passionate software developer and open source contributor, always looking to improve his skills and contribute to the community.",
+      "Url": "https://github.com/wpesicDev",
+      "ImageUrl": "https://avatars.githubusercontent.com/u/84962154",
+      "Contributors": [
+        {
+          "Name": "Williams Pesic",
+          "Url": "https://github.com/wpesicDev"
+        }
+      ],
+      "SyncContributorsFromRepository": true
+    },
+    "Categories": "Editor Tools",
+    "Description": "This package extends Umbraco Forms by integrating the Drawing Captcha App, an innovative tool for verifying human users through interactive drawing tasks. Users are prompted to complete specific patterns or color logos on a grid, ensuring a secure and engaging verification process. Integration is achieved via a NuGet package, allowing easy configuration of your server instance and API key through appsettings.",
+    "DiscussionForumUrl": "",
+    "DocumentationUrl": "https://github.com/Drawing-Captcha/NuGet/blob/main/README.md",
+    "LicenseTypes": [ "MIT" ],
+    "IssueTrackerUrl": "https://github.com/Drawing-Captcha/NuGet/issues",
+    "PackageType": "Source Code",
+    "Screenshots": [
+      {
+        "ImageUrl": "https://github.com/user-attachments/assets/cc1ef188-2cd6-4d73-94fe-8ac191a52926",
+        "Caption": "Drawing Captcha App Backoffice Image"
+      },
+      {
+        "ImageUrl": "https://github.com/user-attachments/assets/b6b6539c-9092-4ec5-97c4-40a69d5c63ed",
+        "Caption": "Frontend Drawing Captcha App Image"
+      }
+    ],
+    "Tags": ["Captcha", "Drawing", "Verification", "Security", "Umbraco Forms"],
+    "Title": "Drawing Captcha"
+  }
