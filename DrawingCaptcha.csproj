@@ -2,7 +2,7 @@
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
 		<PackageId>DrawingCaptcha</PackageId>
-		<Version>1.0.18</Version>
+		<Version>1.0.19</Version>
 		<Authors>Williams Pesic</Authors>
 		<Description>Drawing Captcha is an innovative and engaging software designed to verify human users through interactive drawing tasks. 🖌️ Users are prompted to complete specific patterns or color in logos on a grid, ensuring a secure 🔒 and enjoyable 😊 verification process. This unique approach not only enhances security but also promotes brand awareness by incorporating recognizable brand elements into the captchas.</Description>
 		<OutputPath>$(MSBuildProjectDirectory)\nupkg</OutputPath>
@@ -11,7 +11,7 @@
 		<PackageIconUrl>https://docs.drawing-captcha.com/favicon.ico</PackageIconUrl>
 		<RequireLicenseAcceptance>false</RequireLicenseAcceptance>
 		<ReleaseNotes>Initial release of DrawingCaptcha.</ReleaseNotes>
-		<Tags>captcha security drawing self-hosted brand-awareness umbraco-marketplace</Tags>
+		<Tags>umbraco-marketplace</Tags>
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/Drawing-Captcha/Nuget</RepositoryUrl>
 	</PropertyGroup>
@@ -34,7 +34,8 @@
 		<None Include="Drawing_Captcha\FieldComposer.cs" Pack="true" PackagePath="Drawing_Captcha\FieldComposer.cs" />
   		<None Include="Drawing_Captcha\**" CopyToOutputDirectory="PreserveNewest" />
 		<None Include="buildTransitive\DrawingCaptcha.targets" Pack="true" PackagePath="buildTransitive\DrawingCaptcha.targets" />
-
+	        <None Include="umbraco-marketplace.json" Pack="true" PackagePath="umbraco-marketplace.json" />
+	        <None Include="umbraco-marketplace-readme.md" Pack="true" PackagePath="umbraco-marketplace-readme.md" />
 	</ItemGroup>
 
 	<Import Project="./buildTransitive/DrawingCaptcha.targets" />
