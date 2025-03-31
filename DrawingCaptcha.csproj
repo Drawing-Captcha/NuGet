@@ -11,7 +11,7 @@
 		<PackageIconUrl>https://docs.drawing-captcha.com/favicon.ico</PackageIconUrl>
 		<RequireLicenseAcceptance>false</RequireLicenseAcceptance>
 		<ReleaseNotes>Initial release of DrawingCaptcha.</ReleaseNotes>
-		<PackageTags>umbraco-marketplace;captcha;security</PackageTags>.
+		<PackageTags>umbraco-marketplace;captcha;security</PackageTags>
 		<Tags>umbraco-marketplace</Tags>
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/Drawing-Captcha/Nuget</RepositoryUrl>
