@@ -2,18 +2,20 @@
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
 		<PackageId>DrawingCaptcha</PackageId>
-		<Version>1.0.19</Version>
+		<Version>1.0.20</Version>
 		<Authors>Williams Pesic</Authors>
-		<Description>Drawing Captcha is an innovative and engaging software designed to verify human users through interactive drawing tasks. 🖌️ Users are prompted to complete specific patterns or color in logos on a grid, ensuring a secure 🔒 and enjoyable 😊 verification process. This unique approach not only enhances security but also promotes brand awareness by incorporating recognizable brand elements into the captchas.</Description>
+		<Description>This package offers seamless integration with the Drawing Captcha App, an application designed to verify human users through interactive drawing tasks. Users are prompted to complete specific patterns or color in logos on a grid, ensuring a secure and enjoyable verification process. Integration is achieved via a NuGet package that extends the Umbraco Forms field. You can configure your server instance and API key through the appsettings.</Description>
 		<OutputPath>$(MSBuildProjectDirectory)\nupkg</OutputPath>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageProjectUrl>https://github.com/Drawing-Captcha/Nuget</PackageProjectUrl>
 		<PackageIconUrl>https://docs.drawing-captcha.com/favicon.ico</PackageIconUrl>
 		<RequireLicenseAcceptance>false</RequireLicenseAcceptance>
 		<ReleaseNotes>Initial release of DrawingCaptcha.</ReleaseNotes>
+		<PackageTags>umbraco-marketplace;captcha;security</PackageTags>.
 		<Tags>umbraco-marketplace</Tags>
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/Drawing-Captcha/Nuget</RepositoryUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -36,6 +38,7 @@
 		<None Include="buildTransitive\DrawingCaptcha.targets" Pack="true" PackagePath="buildTransitive\DrawingCaptcha.targets" />
 	        <None Include="umbraco-marketplace.json" Pack="true" PackagePath="umbraco-marketplace.json" />
 	        <None Include="umbraco-marketplace-readme.md" Pack="true" PackagePath="umbraco-marketplace-readme.md" />
+	        <None Include="README.md" Pack="true" PackagePath="README.md" />
 	</ItemGroup>
 
 	<Import Project="./buildTransitive/DrawingCaptcha.targets" />
