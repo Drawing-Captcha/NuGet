@@ -16,7 +16,7 @@
       "SyncContributorsFromRepository": true
     },
     "Category": "Editor Tools", 
-    "Description": "Drawing Captcha Integration for Umbraco Forms",
+    "Description": "Drawing Captcha Integration for Umbraco Forms enhances security with creative drawing tasks, boosting user interaction and brand awareness.",
     "DiscussionForumUrl": "",
     "DocumentationUrl": "https://github.com/Drawing-Captcha/NuGet/blob/main/README.md",
     "LicenseTypes": ["Free"],
@@ -33,5 +33,5 @@
       }
     ],
     "Tags": ["Captcha", "Drawing", "Verification", "Security", "Umbraco Forms"],
-    "Title": "Drawing Captcha"
+    "Title": "Drawing Captcha for Umbraco"
 }
