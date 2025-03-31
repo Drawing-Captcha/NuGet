@@ -15,13 +15,13 @@
       ],
       "SyncContributorsFromRepository": true
     },
-    "Categories": "Editor Tools",
+    "Category": "Editor Tools", 
     "Description": "This package extends Umbraco Forms by integrating the Drawing Captcha App, an innovative tool for verifying human users through interactive drawing tasks. Users are prompted to complete specific patterns or color logos on a grid, ensuring a secure and engaging verification process. Integration is achieved via a NuGet package, allowing easy configuration of your server instance and API key through appsettings.",
     "DiscussionForumUrl": "",
     "DocumentationUrl": "https://github.com/Drawing-Captcha/NuGet/blob/main/README.md",
-    "LicenseTypes": [ "MIT" ],
+    "LicenseTypes": ["Free"],
     "IssueTrackerUrl": "https://github.com/Drawing-Captcha/NuGet/issues",
-    "PackageType": "Source Code",
+    "PackageType": "Package",  
     "Screenshots": [
       {
         "ImageUrl": "https://github.com/user-attachments/assets/cc1ef188-2cd6-4d73-94fe-8ac191a52926",
@@ -34,4 +34,4 @@
     ],
     "Tags": ["Captcha", "Drawing", "Verification", "Security", "Umbraco Forms"],
     "Title": "Drawing Captcha"
-  }
+}
