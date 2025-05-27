@@ -4,22 +4,31 @@
 
 @{
     var APIKey = Configuration.GetValue<string>("Umbraco:Forms:FieldTypes:DrawingCaptcha:APIKey");
+
     var Server = Configuration.GetValue<string>("Umbraco:Forms:FieldTypes:DrawingCaptcha:Server");
 }
 <script>
 
-        @if (!string.IsNullOrEmpty(APIKey))
-        {
-            <text>var CaptchaHiddenAPIKey = "@APIKey";</text>
-        }
-        @if (!string.IsNullOrEmpty(APIKey))
-        {
+    @if (!string.IsNullOrEmpty(APIKey))
+
+    {
+        <text>var CaptchaHiddenAPIKey = "@APIKey";</text>
+    }
+    @if (!string.IsNullOrEmpty(APIKey))
+
+    {
         <text>var CaptchaServerWithPort = "@Server";</text>
-        }
-        let currentElement = document.currentScript.closest('form');
-        if (currentElement) {
-            currentElement.setAttribute('drawing-captcha', '');
-        } else {
-            console.error('No form element found.');
-        }
+    }
+
+    console.log(CaptchaServerWithPort)
+    console.log(CaptchaHiddenAPIKey)
+
+    let currentElement = document.currentScript.closest('form');
+    if (currentElement) {
+        currentElement.setAttribute('drawing-captcha', '');
+    } else {
+        console.error('No form element found.');
+    }
 </script>
+<input type="text" name="@Model.Name" value="@Model.ValueAsHtmlString" class="drawingCaptchaToken" hidden id="@Model.Id" />
+<script src="~/App_Plugins/Drawing_Captcha/captcha.js" onload="initializeCaptcha()"></script>

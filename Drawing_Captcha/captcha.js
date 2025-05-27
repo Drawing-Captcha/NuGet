@@ -4,20 +4,20 @@ function initializeCaptcha(formsWithCaptcha) {
     if (formsWithCaptcha.length > 0) {
         document.body.appendChild(document.createElement("captcha-component"));
         const captchaComponent = document.querySelector("captcha-component");
-    formsWithCaptcha.forEach(form => {
-        form.addEventListener("submit", function (event) {
-            event.preventDefault();
-            captchaComponent.displayCaptchaAndSubmit(form);
+        formsWithCaptcha.forEach(form => {
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+                captchaComponent.displayCaptchaAndSubmit(form);
+            })
         })
-    })
     }
 }
-
 class CaptchaComponent extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
         this.captchaValidated = false;
+        this.form;
     }
 
     connectedCallback() {
@@ -331,7 +331,7 @@ class CaptchaComponent extends HTMLElement {
         template.innerHTML = /* HTML */ `
         <div class="captcha-wrapper">
         <div class="captcha-container">
-        <div class="close-button">×</div>
+        <div class="close-button">X</div>
         <h1 class="title">Loading...</h1>
         <div class="captchta-canvas">
             <div class="background-pattern">
@@ -648,6 +648,7 @@ class CaptchaComponent extends HTMLElement {
 
             if (data.isValid) {
                 alert("Validation successful!");
+                this.injectToken(data.token);
                 this.validateCaptcha(true);
             } else {
                 alert("Validation failed. Please check your selection.");
@@ -673,8 +674,22 @@ class CaptchaComponent extends HTMLElement {
         const data = await response.json();
         return data.valid;
     }
-
+    async injectToken(token) {
+        const existingTokenInput = this.form.querySelector('.drawingCaptchaToken');
+        if (existingTokenInput) {
+            existingTokenInput.value = token;
+        }
+        else {
+            const tokenInput = document.createElement('input');
+            tokenInput.type = 'hidden';
+            tokenInput.name = 'drawingCaptchaToken';
+            tokenInput.value = token;
+            this.form.appendChild(tokenInput);
+        }
+        localStorage.setItem("drawingCaptchaToken", token);
+    }
     async displayCaptchaAndSubmit(form) {
+        this.form = form;
         const isValid = await this.isCaptchaStillValid();
         if (isValid) {
             form.submit();
