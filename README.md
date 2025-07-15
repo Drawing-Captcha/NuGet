@@ -1,5 +1,5 @@
-
 # Drawing Captcha Umbraco Integration
+<img width="100%"  alt="Drawing Captcha Request Flow" src="https://github.com/user-attachments/assets/37db582c-7f7b-4073-bba1-fde94ff34f73" />
 
 This is the NuGet package for .NET 8 .NET Core applications, primarily written to extend the Umbraco Forms Integration. You can find the package on [NuGet](https://www.nuget.org/packages/DrawingCaptcha/).
 
