@@ -1,5 +1,6 @@
-
 # Drawing Captcha Umbraco Integration
+
+<img width="100%" alt="Drawing Captcha Umbraco Request Flow" src="https://github.com/user-attachments/assets/37db582c-7f7b-4073-bba1-fde94ff34f73" />
 
 This package extends Umbraco Forms by integrating the Drawing Captcha App, an innovative tool for verifying human users through interactive drawing tasks. Users are prompted to complete specific patterns or color logos on a grid, ensuring a secure and engaging verification process. Integration is achieved via a NuGet package, allowing easy configuration of your server instance and API key through appsettings.
 
