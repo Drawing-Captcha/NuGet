@@ -2,7 +2,7 @@
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
 		<PackageId>DrawingCaptcha</PackageId>
-		<Version>1.1.0</Version>
+		<Version>1.1.1</Version>
 		<Authors>Williams Pesic</Authors>
 		<Description>This package offers seamless integration with the Drawing Captcha App, an application designed to verify human users through interactive drawing tasks. Users are prompted to complete specific patterns or color in logos on a grid, ensuring a secure and enjoyable verification process. Integration is achieved via a NuGet package that extends the Umbraco Forms field. You can configure your server instance and API key through the appsettings.</Description>
 		<OutputPath>$(MSBuildProjectDirectory)\nupkg</OutputPath>
